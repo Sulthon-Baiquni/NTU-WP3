@@ -422,6 +422,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 64668409}
+  - component: {fileID: 64668410}
   m_Layer: 0
   m_Name: PompaAsrama (1)
   m_TagString: Untagged
@@ -444,6 +445,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1029408719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &64668410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64668408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a6c82d1a19632946866ceb5c82862f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 1180622244}
+  targetObject: {fileID: 489861830}
+  focusSpeed: 2
+  offset: {x: 20, y: 10, z: -10}
 --- !u!1001 &112409471
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1025,7 +1042,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ac955d6b6758ddd44881ca06e36312b6,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1359,7 +1376,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e0c4200d460912f41b98e582d9fe26b3,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e0c4200d460912f41b98e582d9fe26b3,
         type: 3}
@@ -1698,7 +1715,19 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 811852403}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f7886cec8df722f4faec8d14746cbb46,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1715779555}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f7886cec8df722f4faec8d14746cbb46,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1715779554}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f7886cec8df722f4faec8d14746cbb46,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1715779553}
   m_SourcePrefab: {fileID: 100100000, guid: f7886cec8df722f4faec8d14746cbb46, type: 3}
 --- !u!4 &489861830 stripped
 Transform:
@@ -2064,7 +2093,19 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 556829571}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f7886cec8df722f4faec8d14746cbb46,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 620285958}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f7886cec8df722f4faec8d14746cbb46,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 620285957}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f7886cec8df722f4faec8d14746cbb46,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 620285956}
   m_SourcePrefab: {fileID: 100100000, guid: f7886cec8df722f4faec8d14746cbb46, type: 3}
 --- !u!4 &616144757 stripped
 Transform:
@@ -2158,6 +2199,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 617510496}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &620285953 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f7886cec8df722f4faec8d14746cbb46,
+    type: 3}
+  m_PrefabInstance: {fileID: 616144756}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &620285956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620285953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 860552272}
+          m_TargetAssemblyTypeName: CameraFocus, Assembly-CSharp
+          m_MethodName: StartFocus
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &620285957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620285953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7870e004519d17f45bcd672fc72aba60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraFocusScript: {fileID: 860552272}
+--- !u!65 &620285958
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620285953}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.13347256, y: 0.070861205, z: 0.033186406}
+  m_Center: {x: -0.04069355, y: 0.0003892326, z: 0.015213327}
 --- !u!1 &657888857
 GameObject:
   m_ObjectHideFlags: 0
@@ -3220,6 +3330,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 860552271}
+  - component: {fileID: 860552272}
   m_Layer: 0
   m_Name: PompaAsrama (2)
   m_TagString: Untagged
@@ -3242,6 +3353,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1029408719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &860552272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860552270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a6c82d1a19632946866ceb5c82862f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 1180622244}
+  targetObject: {fileID: 616144757}
+  focusSpeed: 2
+  offset: {x: 20, y: 10, z: -10}
 --- !u!1 &864889755
 GameObject:
   m_ObjectHideFlags: 0
@@ -4613,6 +4740,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1426173717}
+  - component: {fileID: 1426173718}
   m_Layer: 0
   m_Name: PompaAsrama (3)
   m_TagString: Untagged
@@ -4635,6 +4763,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1029408719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1426173718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426173716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a6c82d1a19632946866ceb5c82862f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 1180622244}
+  targetObject: {fileID: 1827156610}
+  focusSpeed: 2
+  offset: {x: 20, y: 10, z: -10}
 --- !u!1 &1428095671 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 34501c8b2e7887a4c8265fbc1143db82,
@@ -5575,6 +5719,12 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!1 &1694206427 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f7886cec8df722f4faec8d14746cbb46,
+    type: 3}
+  m_PrefabInstance: {fileID: 1827156609}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1699404480
 GameObject:
   m_ObjectHideFlags: 0
@@ -5720,6 +5870,75 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1699679669}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1715779550 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f7886cec8df722f4faec8d14746cbb46,
+    type: 3}
+  m_PrefabInstance: {fileID: 489861829}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1715779553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715779550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 64668410}
+          m_TargetAssemblyTypeName: CameraFocus, Assembly-CSharp
+          m_MethodName: StartFocus
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1715779554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715779550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7870e004519d17f45bcd672fc72aba60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraFocusScript: {fileID: 64668410}
+--- !u!65 &1715779555
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715779550}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.13347256, y: 0.070861205, z: 0.033186406}
+  m_Center: {x: -0.04069355, y: 0.0003892326, z: 0.015213351}
 --- !u!1 &1726397274
 GameObject:
   m_ObjectHideFlags: 0
@@ -5945,7 +6164,19 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 208865191}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f7886cec8df722f4faec8d14746cbb46,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1827156615}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f7886cec8df722f4faec8d14746cbb46,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1827156614}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f7886cec8df722f4faec8d14746cbb46,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1827156613}
   m_SourcePrefab: {fileID: 100100000, guid: f7886cec8df722f4faec8d14746cbb46, type: 3}
 --- !u!4 &1827156610 stripped
 Transform:
@@ -5953,6 +6184,69 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1827156609}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1827156613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694206427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1426173718}
+          m_TargetAssemblyTypeName: CameraFocus, Assembly-CSharp
+          m_MethodName: StartFocus
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1827156614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694206427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7870e004519d17f45bcd672fc72aba60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraFocusScript: {fileID: 1426173718}
+--- !u!65 &1827156615
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694206427}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.13347256, y: 0.070861205, z: 0.033186406}
+  m_Center: {x: -0.04069355, y: 0.000389173, z: 0.01521336}
 --- !u!1001 &1852127661
 PrefabInstance:
   m_ObjectHideFlags: 0
