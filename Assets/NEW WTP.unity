@@ -322,13 +322,31 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 349367102}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 34501c8b2e7887a4c8265fbc1143db82,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1428095674}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 34501c8b2e7887a4c8265fbc1143db82,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1428095673}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 34501c8b2e7887a4c8265fbc1143db82,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1428095672}
   m_SourcePrefab: {fileID: 100100000, guid: 34501c8b2e7887a4c8265fbc1143db82, type: 3}
 --- !u!4 &35008243 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 34501c8b2e7887a4c8265fbc1143db82,
     type: 3}
   m_PrefabInstance: {fileID: 35008242}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &48706292 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bbfea633479737146ad92bc25460fb5f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1686611454}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &112409471
 PrefabInstance:
@@ -572,6 +590,54 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 190208431}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &199928755
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 199928756}
+  - component: {fileID: 199928757}
+  m_Layer: 0
+  m_Name: GedungPompa
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &199928756
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199928755}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1029408719}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &199928757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199928755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a6c82d1a19632946866ceb5c82862f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 1180622244}
+  targetObject: {fileID: 1852127662}
+  focusSpeed: 2
+  offset: {x: 20, y: 5, z: 0}
 --- !u!1001 &208865190
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1217,7 +1283,19 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f16970da17b84c74fbdd60bb9e5e2f16,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1654095115}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f16970da17b84c74fbdd60bb9e5e2f16,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1654095114}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f16970da17b84c74fbdd60bb9e5e2f16,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1654095113}
   m_SourcePrefab: {fileID: 100100000, guid: f16970da17b84c74fbdd60bb9e5e2f16, type: 3}
 --- !u!4 &411132334 stripped
 Transform:
@@ -1482,7 +1560,19 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 709215675}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1ba2d9315fdde5643bf5e05d1a99391a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1168181748}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1ba2d9315fdde5643bf5e05d1a99391a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1168181750}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1ba2d9315fdde5643bf5e05d1a99391a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1168181749}
   m_SourcePrefab: {fileID: 100100000, guid: 1ba2d9315fdde5643bf5e05d1a99391a, type: 3}
 --- !u!4 &532396735 stripped
 Transform:
@@ -1723,7 +1813,19 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0943ae6c3b63ed04caa2117649684a96,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1241617213}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0943ae6c3b63ed04caa2117649684a96,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1241617212}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0943ae6c3b63ed04caa2117649684a96,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1241617211}
   m_SourcePrefab: {fileID: 100100000, guid: 0943ae6c3b63ed04caa2117649684a96, type: 3}
 --- !u!4 &617510497 stripped
 Transform:
@@ -2283,6 +2385,54 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 789663541}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &796172018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 796172019}
+  - component: {fileID: 796172020}
+  m_Layer: 0
+  m_Name: TankBelakang
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &796172019
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796172018}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1029408719}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &796172020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796172018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a6c82d1a19632946866ceb5c82862f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 1180622244}
+  targetObject: {fileID: 411132334}
+  focusSpeed: 2
+  offset: {x: 5, y: 5, z: 20}
 --- !u!1001 &811852402
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2553,6 +2703,54 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834297476}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &864889755
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 864889756}
+  - component: {fileID: 864889757}
+  m_Layer: 0
+  m_Name: MainTank
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &864889756
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864889755}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1029408719}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &864889757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864889755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a6c82d1a19632946866ceb5c82862f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 1180622244}
+  targetObject: {fileID: 532396735}
+  focusSpeed: 2
+  offset: {x: 15, y: 20, z: 20}
 --- !u!1 &867017336
 GameObject:
   m_ObjectHideFlags: 0
@@ -3116,6 +3314,43 @@ Transform:
   - {fileID: 657888858}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1029408717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1029408719}
+  m_Layer: 0
+  m_Name: CameraController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1029408719
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029408717}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.5818863, y: 13.067251, z: 31.669992}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1299133658}
+  - {fileID: 864889756}
+  - {fileID: 1858917662}
+  - {fileID: 1726397275}
+  - {fileID: 796172019}
+  - {fileID: 199928756}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1059655574
 GameObject:
   m_ObjectHideFlags: 0
@@ -3152,6 +3387,81 @@ Transform:
   - {fileID: 1513263473}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1064840585 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 002c460ec810cae4cb79ff243193a865,
+    type: 3}
+  m_PrefabInstance: {fileID: 1852127661}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1168181747 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1ba2d9315fdde5643bf5e05d1a99391a,
+    type: 3}
+  m_PrefabInstance: {fileID: 532396734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1168181748
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168181747}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 21.053976, y: 9.298649, z: 0}
+  m_Center: {x: 52.250458, y: 4.1148376, z: 0.5000001}
+--- !u!114 &1168181749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168181747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 864889757}
+          m_TargetAssemblyTypeName: CameraFocus, Assembly-CSharp
+          m_MethodName: StartFocus
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1168181750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168181747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7870e004519d17f45bcd672fc72aba60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraFocusScript: {fileID: 864889757}
 --- !u!1 &1180622241
 GameObject:
   m_ObjectHideFlags: 0
@@ -3164,6 +3474,7 @@ GameObject:
   - component: {fileID: 1180622244}
   - component: {fileID: 1180622243}
   - component: {fileID: 1180622242}
+  - component: {fileID: 1180622246}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3282,13 +3593,147 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1180622241}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.20167215, y: -0.48192018, z: 0.115031786, w: 0.84489584}
+  m_LocalPosition: {x: 93.9, y: 56.9, z: -65.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 26.85, y: -59.4, z: 0}
+--- !u!114 &1180622246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180622241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9b0ebf3daf99db4a93200f1207c31c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 25
+  rotationSpeed: 100
+  zoomSpeed: 25
+  minZoomDistance: 5
+  maxZoomDistance: 50
+--- !u!1 &1241617208 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0943ae6c3b63ed04caa2117649684a96,
+    type: 3}
+  m_PrefabInstance: {fileID: 617510496}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1241617211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241617208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1726397276}
+          m_TargetAssemblyTypeName: CameraFocus, Assembly-CSharp
+          m_MethodName: StartFocus
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1241617212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241617208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7870e004519d17f45bcd672fc72aba60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraFocusScript: {fileID: 1726397276}
+--- !u!65 &1241617213
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241617208}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.079881966, y: 0.26599854, z: 0.07700011}
+  m_Center: {x: 0.0013928778, y: -0.004155313, z: -0.0023135543}
+--- !u!1 &1299133657
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1299133658}
+  - component: {fileID: 1299133659}
+  m_Layer: 0
+  m_Name: TankLuar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1299133658
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299133657}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1029408719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1299133659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299133657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a6c82d1a19632946866ceb5c82862f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 1180622244}
+  targetObject: {fileID: 35008243}
+  focusSpeed: 2
+  offset: {x: 15, y: 20, z: 20}
 --- !u!1001 &1355889726
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3367,6 +3812,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1355889726}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1428095671 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 34501c8b2e7887a4c8265fbc1143db82,
+    type: 3}
+  m_PrefabInstance: {fileID: 35008242}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1428095672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428095671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1299133659}
+          m_TargetAssemblyTypeName: CameraFocus, Assembly-CSharp
+          m_MethodName: StartFocus
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1428095673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428095671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7870e004519d17f45bcd672fc72aba60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraFocusScript: {fileID: 1299133659}
+--- !u!65 &1428095674
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428095671}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 9.093579, y: 10.2500515, z: 5.90445}
+  m_Center: {x: 3.7091632, y: 4.6250257, z: 2.4522252}
 --- !u!1 &1453186640
 GameObject:
   m_ObjectHideFlags: 0
@@ -3716,6 +4230,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1598848749}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1654095110 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f16970da17b84c74fbdd60bb9e5e2f16,
+    type: 3}
+  m_PrefabInstance: {fileID: 411132333}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1654095113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654095110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 796172020}
+          m_TargetAssemblyTypeName: CameraFocus, Assembly-CSharp
+          m_MethodName: StartFocus
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1654095114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654095110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7870e004519d17f45bcd672fc72aba60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraFocusScript: {fileID: 796172020}
+--- !u!65 &1654095115
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654095110}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.13705276, y: 0.13734207, z: 0.07812835}
+  m_Center: {x: 0.016970376, y: 0.054302517, z: 0.00050241564}
 --- !u!1001 &1671533544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3894,7 +4477,19 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1875574506}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bbfea633479737146ad92bc25460fb5f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1686611458}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bbfea633479737146ad92bc25460fb5f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1686611460}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bbfea633479737146ad92bc25460fb5f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1686611459}
   m_SourcePrefab: {fileID: 100100000, guid: bbfea633479737146ad92bc25460fb5f, type: 3}
 --- !u!4 &1686611455 stripped
 Transform:
@@ -3902,6 +4497,69 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1686611454}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1686611458
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48706292}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.08773545, y: 0.061744623, z: 0.14864117}
+  m_Center: {x: 0.021780256, y: 0.01035908, z: -0.072922185}
+--- !u!114 &1686611459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48706292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7870e004519d17f45bcd672fc72aba60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraFocusScript: {fileID: 1858917663}
+--- !u!114 &1686611460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48706292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1858917663}
+          m_TargetAssemblyTypeName: CameraFocus, Assembly-CSharp
+          m_MethodName: StartFocus
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1699404480
 GameObject:
   m_ObjectHideFlags: 0
@@ -4047,6 +4705,54 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1699679669}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1726397274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1726397275}
+  - component: {fileID: 1726397276}
+  m_Layer: 0
+  m_Name: TankFilterasi
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1726397275
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726397274}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1029408719}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1726397276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726397274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a6c82d1a19632946866ceb5c82862f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 1180622244}
+  targetObject: {fileID: 617510497}
+  focusSpeed: 2
+  offset: {x: 5, y: 5, z: 10}
 --- !u!1 &1769609095
 GameObject:
   m_ObjectHideFlags: 0
@@ -4318,7 +5024,19 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 002c460ec810cae4cb79ff243193a865,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1852127667}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 002c460ec810cae4cb79ff243193a865,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1852127666}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 002c460ec810cae4cb79ff243193a865,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1852127665}
   m_SourcePrefab: {fileID: 100100000, guid: 002c460ec810cae4cb79ff243193a865, type: 3}
 --- !u!4 &1852127662 stripped
 Transform:
@@ -4326,6 +5044,117 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1852127661}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1852127665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064840585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 199928757}
+          m_TargetAssemblyTypeName: CameraFocus, Assembly-CSharp
+          m_MethodName: StartFocus
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1852127666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064840585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7870e004519d17f45bcd672fc72aba60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraFocusScript: {fileID: 199928757}
+--- !u!65 &1852127667
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064840585}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.07086118, y: 0.070861176, z: 0.033186372}
+  m_Center: {x: -0.009387744, y: 0.0003893301, z: 0.015213416}
+--- !u!1 &1858917661
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1858917662}
+  - component: {fileID: 1858917663}
+  m_Layer: 0
+  m_Name: DosisTank
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1858917662
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858917661}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1029408719}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1858917663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858917661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a6c82d1a19632946866ceb5c82862f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 1180622244}
+  targetObject: {fileID: 1686611455}
+  focusSpeed: 2
+  offset: {x: 5, y: 5, z: 20}
 --- !u!1 &1870184499
 GameObject:
   m_ObjectHideFlags: 0
@@ -4898,3 +5727,4 @@ SceneRoots:
   - {fileID: 495755722}
   - {fileID: 1059655575}
   - {fileID: 1870184500}
+  - {fileID: 1029408719}

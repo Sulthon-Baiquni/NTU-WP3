@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ClickButton : MonoBehaviour
 {
-    public CameraFocus cameraFocusScript; // Referensi ke skrip CameraFocus
+    public CameraFocus cameraFocusScript;
     void Update()
     {
         //klik mouse kiri
