@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "M:\\Project\\NTU-WP3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BAA3F992-FFFA-7E93-5664-D9C21542A50E}|Assembly-CSharp.csproj|m:\\project\\ntu-wp3\\assets\\scripts\\clickbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BAA3F992-FFFA-7E93-5664-D9C21542A50E}|Assembly-CSharp.csproj|m:\\project\\ntu-wp3\\assets\\scripts\\camerafocus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAA3F992-FFFA-7E93-5664-D9C21542A50E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerafocus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAA3F992-FFFA-7E93-5664-D9C21542A50E}|Assembly-CSharp.csproj|M:\\Project\\NTU-WP3\\assets\\scripts\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAA3F992-FFFA-7E93-5664-D9C21542A50E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAA3F992-FFFA-7E93-5664-D9C21542A50E}|Assembly-CSharp.csproj|M:\\Project\\NTU-WP3\\assets\\scripts\\clickbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAA3F992-FFFA-7E93-5664-D9C21542A50E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\clickbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,20 +22,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CameraController.cs",
+              "DocumentMoniker": "M:\\Project\\NTU-WP3\\Assets\\Scripts\\CameraController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraController.cs",
+              "ToolTip": "M:\\Project\\NTU-WP3\\Assets\\Scripts\\CameraController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CameraController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T03:11:46.461Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CameraFocus.cs",
+              "DocumentMoniker": "M:\\Project\\NTU-WP3\\Assets\\Scripts\\CameraFocus.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraFocus.cs",
+              "ToolTip": "M:\\Project\\NTU-WP3\\Assets\\Scripts\\CameraFocus.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CameraFocus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T03:00:48.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ClickButton.cs",
               "DocumentMoniker": "M:\\Project\\NTU-WP3\\Assets\\Scripts\\ClickButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ClickButton.cs",
               "ToolTip": "M:\\Project\\NTU-WP3\\Assets\\Scripts\\ClickButton.cs",
               "RelativeToolTip": "Assets\\Scripts\\ClickButton.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T02:53:34.744Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T02:53:34.744Z"
             }
           ]
         }
