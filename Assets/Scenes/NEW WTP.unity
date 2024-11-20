@@ -2526,6 +2526,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GEDUNG P ASRAMA (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f7886cec8df722f4faec8d14746cbb46,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
