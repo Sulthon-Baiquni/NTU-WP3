@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "M:\\Project\\NTU-WP3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BAA3F992-FFFA-7E93-5664-D9C21542A50E}|Assembly-CSharp.csproj|m:\\project\\ntu-wp3\\assets\\scripts\\layermapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAA3F992-FFFA-7E93-5664-D9C21542A50E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\layermapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BAA3F992-FFFA-7E93-5664-D9C21542A50E}|Assembly-CSharp.csproj|m:\\project\\ntu-wp3\\assets\\scripts\\togglevisibility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAA3F992-FFFA-7E93-5664-D9C21542A50E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\togglevisibility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,32 +31,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LayerMapController.cs",
-              "DocumentMoniker": "M:\\Project\\NTU-WP3\\Assets\\Scripts\\LayerMapController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\LayerMapController.cs",
-              "ToolTip": "M:\\Project\\NTU-WP3\\Assets\\Scripts\\LayerMapController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\LayerMapController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T14:53:11.285Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "ToggleVisibility.cs",
               "DocumentMoniker": "M:\\Project\\NTU-WP3\\Assets\\Scripts\\ToggleVisibility.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ToggleVisibility.cs",
               "ToolTip": "M:\\Project\\NTU-WP3\\Assets\\Scripts\\ToggleVisibility.cs",
               "RelativeToolTip": "Assets\\Scripts\\ToggleVisibility.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAowCoAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwCoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T07:40:00.686Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "CameraController.cs",
               "DocumentMoniker": "M:\\Project\\NTU-WP3\\Assets\\Scripts\\CameraController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraController.cs",
@@ -72,7 +55,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "CameraFocus.cs",
               "DocumentMoniker": "M:\\Project\\NTU-WP3\\Assets\\Scripts\\CameraFocus.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraFocus.cs",
@@ -84,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "ClickButton.cs",
               "DocumentMoniker": "M:\\Project\\NTU-WP3\\Assets\\Scripts\\ClickButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ClickButton.cs",
