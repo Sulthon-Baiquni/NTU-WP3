@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public float movementSpeed = 10f; // Kecepatan pergerakan kamera (geser)
+    public float movementSpeed = 2f; // Kecepatan pergerakan kamera
     public float rotationSpeed = 100f; // Kecepatan rotasi kamera
     public float zoomSpeed = 5f; // Kecepatan zoom
     public float minZoomDistance = 5f; // Jarak minimum zoom
@@ -13,6 +13,8 @@ public class CameraController : MonoBehaviour
     private float pitch = 0f; // Sudut rotasi vertikal
     private float yaw = 0f; // Sudut rotasi horizontal
     private Camera cam; // Referensi ke kamera utama
+
+    private Vector3 dragOrigin; // Posisi awal drag mouse
 
     private void Start()
     {
@@ -25,23 +27,29 @@ public class CameraController : MonoBehaviour
 
     private void Update()
     {
-        MoveCamera(); // Memproses pergerakan kamera
+        PanCamera(); // Memproses geser peta dengan klik kiri
         RotateCamera(); // Memproses rotasi kamera
         ZoomCamera(); // Memproses zoom kamera
     }
 
-    private void MoveCamera()
+    private void PanCamera()
     {
-        if (Input.GetMouseButton(0)) // Klik kiri untuk menggeser
+        if (Input.GetMouseButtonDown(0)) // Ketika klik kiri ditekan
         {
-            float moveX = Input.GetAxis("Mouse X");
-            float moveZ = Input.GetAxis("Mouse Y");
+            dragOrigin = Input.mousePosition; // Simpan posisi awal drag
+        }
 
-            // Arah pergerakan relatif terhadap kamera
-            Vector3 moveDirection = (transform.right * moveX + transform.up * moveZ) * movementSpeed * Time.deltaTime;
+        if (Input.GetMouseButton(0)) // Ketika klik kiri di-drag
+        {
+            Vector3 dragDelta = Input.mousePosition - dragOrigin; // Hitung pergeseran mouse
+            dragOrigin = Input.mousePosition; // Update posisi awal untuk frame berikutnya
+
+            // Hitung arah pan (geser) berdasarkan sumbu horizontal dan vertikal
+            float panX = -dragDelta.x * movementSpeed * Time.deltaTime;
+            float panZ = -dragDelta.y * movementSpeed * Time.deltaTime;
 
             // Update posisi kamera
-            transform.position += moveDirection;
+            transform.position += transform.right * panX + transform.up * panZ;
         }
     }
 
@@ -69,18 +77,11 @@ public class CameraController : MonoBehaviour
 
         if (scroll != 0f) // Pastikan ada input dari scroll
         {
-            // Mendapatkan posisi target zoom
+            // Mendapatkan arah zoom
             Vector3 zoomDirection = cam.transform.forward * scroll * zoomSpeed;
-            Vector3 newCameraPosition = cam.transform.position + zoomDirection;
 
-            // Menghitung jarak antara kamera dan posisi asalnya
-            float distanceFromOrigin = Vector3.Distance(transform.position, newCameraPosition);
-
-            // Membatasi jarak zoom
-            if (distanceFromOrigin >= minZoomDistance && distanceFromOrigin <= maxZoomDistance)
-            {
-                cam.transform.position = newCameraPosition;
-            }
+            // Update posisi kamera berdasarkan input scroll
+            cam.transform.position += zoomDirection;
         }
     }
 }
