@@ -10356,7 +10356,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1380121118}
-  - component: {fileID: 1380121117}
+  - component: {fileID: 1380121119}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -10364,24 +10364,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1380121117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1380121116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ef65933ee7a8614c8af07e99a49f506, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainCamera: {fileID: 1180622244}
-  cameraGroups:
-  - dropdown: {fileID: 1242088582}
-    cameraOptions:
-    - optionName: RESET CAMERA
-      cameraObject: {fileID: 688167407}
 --- !u!4 &1380121118
 Transform:
   m_ObjectHideFlags: 0
@@ -10397,6 +10379,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1380121119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380121116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6273e34ec90dfab4e99f915b27a82fbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 1180622244}
+  cameraDropdown: {fileID: 1242088582}
+  cameraObjects:
+  - {fileID: 688167407}
 --- !u!1 &1426173716
 GameObject:
   m_ObjectHideFlags: 0
@@ -15348,7 +15346,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2005461900
 MonoBehaviour:
   m_ObjectHideFlags: 0
