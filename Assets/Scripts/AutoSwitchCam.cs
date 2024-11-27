@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CameraSwitcher : MonoBehaviour
+public class AutoSwitchCam : MonoBehaviour
 {
     [System.Serializable]
     public class DropdownCameraMapping
     {
-        public Dropdown dropdown; // Dropdown UI
-        public List<GameObject> targetObjects; // List of objects with camera components as reference
+        public UnityEngine.UI.Dropdown dropdown; // Legacy UI Dropdown
+        public List<GameObject> targetObjects; // List objek dengan kamera
     }
 
-    public List<DropdownCameraMapping> dropdownMappings; // List of dropdown to object mappings
+    public List<DropdownCameraMapping> dropdownMappings; // Mapping Dropdown ke objek
     private Camera mainCamera;
 
     private void Start()
@@ -34,7 +34,11 @@ public class CameraSwitcher : MonoBehaviour
                 continue;
             }
 
-            mapping.dropdown.onValueChanged.AddListener((index) => OnDropdownValueChanged(mapping, index));
+            // Tambahkan listener ke Legacy Dropdown
+            mapping.dropdown.onValueChanged.AddListener((index) => 
+            {
+                OnDropdownValueChanged(mapping, index);
+            });
         }
     }
 
@@ -46,7 +50,6 @@ public class CameraSwitcher : MonoBehaviour
             return;
         }
 
-        // Dapatkan objek target berdasarkan pilihan dropdown
         GameObject targetObject = mapping.targetObjects[index];
         if (targetObject == null)
         {
@@ -54,7 +57,6 @@ public class CameraSwitcher : MonoBehaviour
             return;
         }
 
-        // Ambil kamera di dalam objek target
         Camera targetCamera = targetObject.GetComponent<Camera>();
         if (targetCamera == null)
         {
@@ -62,10 +64,28 @@ public class CameraSwitcher : MonoBehaviour
             return;
         }
 
-        // Pindahkan Main Camera ke posisi dan rotasi kamera target
-        mainCamera.transform.position = targetCamera.transform.position;
-        mainCamera.transform.rotation = targetCamera.transform.rotation;
+        // Pindahkan kamera utama ke target
+        StartCoroutine(SmoothTransition(targetCamera.transform.position, targetCamera.transform.rotation, 1f));
+    }
 
-        Debug.Log("Main Camera dipindahkan ke: " + targetObject.name);
+    private IEnumerator SmoothTransition(Vector3 targetPosition, Quaternion targetRotation, float duration)
+    {
+        Vector3 startPosition = mainCamera.transform.position;
+        Quaternion startRotation = mainCamera.transform.rotation;
+
+        float elapsed = 0f;
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsed / duration);
+
+            mainCamera.transform.position = Vector3.Lerp(startPosition, targetPosition, t);
+            mainCamera.transform.rotation = Quaternion.Lerp(startRotation, targetRotation, t);
+
+            yield return null;
+        }
+
+        mainCamera.transform.position = targetPosition;
+        mainCamera.transform.rotation = targetRotation;
     }
 }
