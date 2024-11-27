@@ -10,6 +10,7 @@ public class AutoSwitchCam : MonoBehaviour
     {
         public UnityEngine.UI.Dropdown dropdown; // Legacy UI Dropdown
         public List<GameObject> targetObjects; // List objek dengan kamera
+        public List<GameObject> uiImages;
     }
 
     public List<DropdownCameraMapping> dropdownMappings; // Mapping Dropdown ke objek
@@ -35,28 +36,58 @@ public class AutoSwitchCam : MonoBehaviour
             }
 
             // Tambahkan listener ke Legacy Dropdown
-            mapping.dropdown.onValueChanged.AddListener((index) => 
+            mapping.dropdown.onValueChanged.AddListener((index) =>
             {
                 OnDropdownValueChanged(mapping, index);
             });
+
+            // Tambahkan onClick event untuk menampilkan UI saat dropdown diklik
+            Button dropdownButton = mapping.dropdown.GetComponent<Button>();
+            if (dropdownButton != null)
+            {
+                dropdownButton.onClick.AddListener(() =>
+                {
+                    OnDropdownClicked(mapping);
+                });
+            }
+        }
+    }
+
+    private void OnDropdownClicked(DropdownCameraMapping mapping)
+    {
+        // Aktifkan semua UI images saat dropdown diklik
+        foreach (var ui in mapping.uiImages)
+        {
+            if (ui != null)
+                ui.SetActive(true); // Tampilkan UI image
         }
     }
 
     private void OnDropdownValueChanged(DropdownCameraMapping mapping, int index)
     {
-        if (index < 0 || index >= mapping.targetObjects.Count)
+        if (index < 0 || index >= mapping.targetObjects.Count || index >= mapping.uiImages.Count)
         {
             Debug.LogWarning("Index tidak valid pada dropdown: " + mapping.dropdown.name);
             return;
         }
 
         GameObject targetObject = mapping.targetObjects[index];
-        if (targetObject == null)
+        GameObject uiImage = mapping.uiImages[index];
+
+        // Sembunyikan semua UI images sebelum menampilkan yang sesuai
+        foreach (var ui in mapping.uiImages)
         {
-            Debug.LogWarning("Target object tidak ditemukan untuk pilihan index: " + index);
-            return;
+            if (ui != null)
+                ui.SetActive(false);
         }
 
+        // Aktifkan UI yang sesuai dengan pilihan dropdown
+        if (uiImage != null)
+        {
+            uiImage.SetActive(true);
+        }
+
+        // Pindahkan kamera utama ke target
         Camera targetCamera = targetObject.GetComponent<Camera>();
         if (targetCamera == null)
         {
@@ -64,7 +95,6 @@ public class AutoSwitchCam : MonoBehaviour
             return;
         }
 
-        // Pindahkan kamera utama ke target
         StartCoroutine(SmoothTransition(targetCamera.transform.position, targetCamera.transform.rotation, 1f));
     }
 
