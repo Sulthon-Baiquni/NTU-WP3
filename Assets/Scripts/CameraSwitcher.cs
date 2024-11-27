@@ -5,105 +5,67 @@ using UnityEngine.UI;
 
 public class CameraSwitcher : MonoBehaviour
 {
-    public Camera mainCamera; // Referensi ke Main Camera
-
-    // Struktur untuk menyimpan pasangan opsi dropdown dan objek kamera
     [System.Serializable]
-    public class CameraGroup
+    public class DropdownCameraMapping
     {
         public Dropdown dropdown; // Dropdown UI
-        public List<CameraOption> cameraOptions; // Daftar opsi kamera terkait
+        public List<GameObject> targetObjects; // List of objects with camera components as reference
     }
 
-    [System.Serializable]
-    public class CameraOption
-    {
-        public string optionName; // Nama opsi pada dropdown
-        public GameObject cameraObject; // Objek yang memiliki kamera
-    }
-
-    public List<CameraGroup> cameraGroups; // Daftar semua grup dropdown dan opsi kameranya
+    public List<DropdownCameraMapping> dropdownMappings; // List of dropdown to object mappings
+    private Camera mainCamera;
 
     private void Start()
     {
-        // Validasi Main Camera
+        // Cari Main Camera di scene
+        mainCamera = Camera.main;
         if (mainCamera == null)
         {
             Debug.LogError("Main Camera tidak ditemukan!");
             return;
         }
 
-        // Validasi setiap grup dropdown dan opsi kameranya
-        foreach (var group in cameraGroups)
+        // Tambahkan listener untuk setiap dropdown
+        foreach (var mapping in dropdownMappings)
         {
-            if (group.dropdown == null)
+            if (mapping.dropdown == null)
             {
-                Debug.LogError("Dropdown tidak ditemukan di salah satu grup!");
+                Debug.LogError("Dropdown belum diatur dalam mapping.");
                 continue;
             }
 
-            // Tambahkan listener ke setiap dropdown
-            group.dropdown.onValueChanged.AddListener((index) => SwitchCamera(group, index));
-
-            // Nonaktifkan semua kamera di setiap grup di awal
-            foreach (var option in group.cameraOptions)
-            {
-                if (option.cameraObject != null)
-                    option.cameraObject.SetActive(false);
-            }
-
-            // Inisialisasi dropdown dengan opsi
-            PopulateDropdown(group);
+            mapping.dropdown.onValueChanged.AddListener((index) => OnDropdownValueChanged(mapping, index));
         }
     }
 
-    private void PopulateDropdown(CameraGroup group)
+    private void OnDropdownValueChanged(DropdownCameraMapping mapping, int index)
     {
-        group.dropdown.ClearOptions(); // Hapus opsi lama
-        List<string> options = new List<string>();
-
-        foreach (var option in group.cameraOptions)
+        if (index < 0 || index >= mapping.targetObjects.Count)
         {
-            options.Add(option.optionName); // Tambahkan nama opsi ke dropdown
-        }
-
-        group.dropdown.AddOptions(options); // Masukkan opsi ke dropdown
-    }
-
-    // Fungsi untuk mengganti kamera berdasarkan dropdown yang dipilih
-    public void SwitchCamera(CameraGroup group, int index)
-    {
-        if (index < 0 || index >= group.cameraOptions.Count)
-        {
-            Debug.LogWarning("Indeks dropdown tidak valid!");
+            Debug.LogWarning("Index tidak valid pada dropdown: " + mapping.dropdown.name);
             return;
         }
 
-        // Nonaktifkan semua kamera sebelum mengaktifkan yang baru
-        foreach (var option in group.cameraOptions)
+        // Dapatkan objek target berdasarkan pilihan dropdown
+        GameObject targetObject = mapping.targetObjects[index];
+        if (targetObject == null)
         {
-            if (option.cameraObject != null)
-                option.cameraObject.SetActive(false);
+            Debug.LogWarning("Target object tidak ditemukan untuk pilihan index: " + index);
+            return;
         }
 
-        // Ambil opsi kamera yang dipilih berdasarkan indeks
-        CameraOption selectedOption = group.cameraOptions[index];
-        if (selectedOption != null && selectedOption.cameraObject != null)
+        // Ambil kamera di dalam objek target
+        Camera targetCamera = targetObject.GetComponent<Camera>();
+        if (targetCamera == null)
         {
-            // Aktifkan kamera objek untuk mendapatkan transformasinya
-            selectedOption.cameraObject.SetActive(true);
-
-            // Sinkronkan posisi dan rotasi Main Camera dengan kamera dari objek tersebut
-            Camera selectedCamera = selectedOption.cameraObject.GetComponent<Camera>();
-            if (selectedCamera != null)
-            {
-                mainCamera.transform.position = selectedCamera.transform.position;
-                mainCamera.transform.rotation = selectedCamera.transform.rotation;
-            }
-            else
-            {
-                Debug.LogWarning("Kamera tidak ditemukan di objek: " + selectedOption.cameraObject.name);
-            }
+            Debug.LogWarning("Camera component tidak ditemukan di dalam target object: " + targetObject.name);
+            return;
         }
+
+        // Pindahkan Main Camera ke posisi dan rotasi kamera target
+        mainCamera.transform.position = targetCamera.transform.position;
+        mainCamera.transform.rotation = targetCamera.transform.rotation;
+
+        Debug.Log("Main Camera dipindahkan ke: " + targetObject.name);
     }
 }
