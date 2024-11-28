@@ -23,6 +23,11 @@ public class CameraController : MonoBehaviour
         {
             Debug.LogError("No main camera found in the scene!");
         }
+
+        // Inisialisasi pitch dan yaw dari tranform awal
+        Vector3 currentRotation = transform.eulerAngles;
+        pitch = currentRotation.x;
+        yaw = currentRotation.y;
     }
 
     private void Update()
