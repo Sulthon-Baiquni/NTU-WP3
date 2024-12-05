@@ -85,20 +85,15 @@ public class APIWaterQuality : MonoBehaviour
 
     private Color DetermineWaterColor(float ph, float turbidity, float tds)
     {
-        // Logic sederhana untuk menentukan warna air
+        // Kondisi warna air menggunakan operator OR
         if (ph < 6.5f || ph > 8.5f)
         {
             return new Color32(139, 69, 19, 255); // Cokelat (air tidak sehat)
         }
 
-        if (turbidity > 30f)
+        if (turbidity > 30f || tds > 1000f)
         {
-            return new Color32(255, 165, 0, 255); // Oranye (kekeruhan tinggi)
-        }
-
-        if (tds > 1000f)
-        {
-            return new Color32(255, 255, 255, 255); // Putih (TDS tinggi)
+            return new Color32(255, 165, 0, 255); // Oranye (kekeruhan tinggi atau TDS tinggi)
         }
 
         return new Color32(0, 191, 255, 255); // Biru (kondisi normal)
