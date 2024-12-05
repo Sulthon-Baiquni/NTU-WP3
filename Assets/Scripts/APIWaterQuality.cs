@@ -3,77 +3,113 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
+using System;
 
 public class APIWaterQuality : MonoBehaviour
 {
     public Material waterShader;
+    public string backendUrl = "http://localhost:3000"; // URL backend Anda
 
     private void Start()
     {
-        StartCoroutine(ChangeWaterColorPeriodically());
+        StartCoroutine(FetchWaterQualityPeriodically());
     }
 
-    private System.Collections.IEnumerator ChangeWaterColorPeriodically()
+    private System.Collections.IEnumerator FetchWaterQualityPeriodically()
     {
         while (true)
         {
-            // Generate nilai pH, turbiditas, dan TDS secara random
-            float ph = Random.Range(4.5f, 10.0f);
-            float turbidity = Random.Range(0f, 40f);
-            float tds = Random.Range(100f, 2000f);
-
-            // Panggil API untuk mendapatkan warna air
-            yield return StartCoroutine(GetWaterColor(ph, turbidity, tds));
-
-            // Tunggu 10 detik sebelum mengubah warna lagi
+            yield return StartCoroutine(FetchWaterQualityData());
+            // Tunggu 10 detik sebelum permintaan berikutnya
             yield return new WaitForSeconds(10f);
         }
     }
 
-    private System.Collections.IEnumerator GetWaterColor(float ph, float turbidity, float tds)
+    private System.Collections.IEnumerator FetchWaterQualityData()
     {
-        string url = $"http://localhost:5000/water-color?ph={ph}&turbidity={turbidity}&tds={tds}";
-        using (UnityWebRequest www = UnityWebRequest.Get(url))
-        {
-            yield return www.SendWebRequest();
-
-            if (www.result != UnityWebRequest.Result.Success)
-            {
-                Debug.LogError("Gagal mengambil data warna air: " + www.error);
-            }
-            else
-            {
-                WaterColorResponse response = JsonUtility.FromJson<WaterColorResponse>(www.downloadHandler.text);
-                UpdateShaderColor(response.color);
-            }
-        }
-    }
-
-    private void UpdateShaderColor(string color)
-    {
-        // Peta warna ke nilai RGB
-        Dictionary<string, Color32> colorMap = new Dictionary<string, Color32>
-        {
-            { "cokelat", new Color32(139, 69, 19, 255) },
-            { "oranye", new Color32(255, 165, 0, 255) },
-            { "biru", new Color32(0, 191, 255, 255) },
-            { "putih", new Color32(255, 255, 255, 255) }
+        // Daftar titik monitoring
+        string[] monitoringPoints = {
+            "point-situ",
+            "point-wtp",
+            "point-filtrasi",
+            "point-groundTank",
+            "point-dorm"
         };
 
-        if (colorMap.TryGetValue(color, out Color32 shaderColor))
+        foreach (string pointName in monitoringPoints)
         {
-            waterShader.SetColor("_Color", shaderColor);
-        }
-        else
-        {
-            // Jika warna tidak ditemukan, atur warna air ke biru
-            waterShader.SetColor("_Color", new Color32(0, 191, 255, 255));
+            // Buat URL untuk mengambil parameter terbaru
+            string url = $"{backendUrl}/parameters/{pointName}";
+
+            using (UnityWebRequest www = UnityWebRequest.Get(url))
+            {
+                yield return www.SendWebRequest();
+
+                if (www.result != UnityWebRequest.Result.Success)
+                {
+                    Debug.LogError($"Gagal mengambil data untuk {pointName}: " + www.error);
+                    continue;
+                }
+
+                try
+                {
+                    // Parse JSON response
+                    string jsonResponse = www.downloadHandler.text;
+                    WaterQualityData waterQualityData = JsonUtility.FromJson<WaterQualityData>(jsonResponse);
+
+                    // Ubah warna air berdasarkan parameter
+                    UpdateWaterColor(waterQualityData.ph, waterQualityData.turbidity, waterQualityData.tds);
+
+                    // Log data yang diterima
+                    Debug.Log($"Data untuk {pointName}: " +
+                              $"pH={waterQualityData.ph}, " +
+                              $"Turbidity={waterQualityData.turbidity}, " +
+                              $"TDS={waterQualityData.tds}");
+                }
+                catch (Exception e)
+                {
+                    Debug.LogError($"Kesalahan parsing data untuk {pointName}: " + e.Message);
+                }
+            }
         }
     }
 
-    [System.Serializable]
-    private class WaterColorResponse
+    private void UpdateWaterColor(float ph, float turbidity, float tds)
     {
-        public string color;
+        // Logic untuk menentukan warna air berdasarkan parameter
+        Color waterColor = DetermineWaterColor(ph, turbidity, tds);
+
+        // Terapkan warna ke shader air
+        waterShader.SetColor("_Color", waterColor);
+    }
+
+    private Color DetermineWaterColor(float ph, float turbidity, float tds)
+    {
+        // Logic sederhana untuk menentukan warna air
+        if (ph < 6.5f || ph > 8.5f)
+        {
+            return new Color32(139, 69, 19, 255); // Cokelat (air tidak sehat)
+        }
+
+        if (turbidity > 30f)
+        {
+            return new Color32(255, 165, 0, 255); // Oranye (kekeruhan tinggi)
+        }
+
+        if (tds > 1000f)
+        {
+            return new Color32(255, 255, 255, 255); // Putih (TDS tinggi)
+        }
+
+        return new Color32(0, 191, 255, 255); // Biru (kondisi normal)
+    }
+
+    // Class untuk memetakan struktur data JSON dari backend
+    [Serializable]
+    private class WaterQualityData
+    {
+        public float ph;
+        public float turbidity;
+        public float tds;
     }
 }
