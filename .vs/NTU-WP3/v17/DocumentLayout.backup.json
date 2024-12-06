@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "M:\\Project\\NTU-WP3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BAA3F992-FFFA-7E93-5664-D9C21542A50E}|Assembly-CSharp.csproj|m:\\project\\ntu-wp3\\assets\\scripts\\objectscaler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BAA3F992-FFFA-7E93-5664-D9C21542A50E}|Assembly-CSharp.csproj|m:\\project\\ntu-wp3\\assets\\scripts\\apiwaterquality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAA3F992-FFFA-7E93-5664-D9C21542A50E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\apiwaterquality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAA3F992-FFFA-7E93-5664-D9C21542A50E}|Assembly-CSharp.csproj|M:\\Project\\NTU-WP3\\assets\\scripts\\objectscaler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAA3F992-FFFA-7E93-5664-D9C21542A50E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\objectscaler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -39,6 +43,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "APIWaterQuality.cs",
+              "DocumentMoniker": "M:\\Project\\NTU-WP3\\Assets\\Scripts\\APIWaterQuality.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\APIWaterQuality.cs",
+              "ToolTip": "M:\\Project\\NTU-WP3\\Assets\\Scripts\\APIWaterQuality.cs",
+              "RelativeToolTip": "Assets\\Scripts\\APIWaterQuality.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAgwEEAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T06:01:31.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ObjectScaler.cs",
               "DocumentMoniker": "M:\\Project\\NTU-WP3\\Assets\\Scripts\\ObjectScaler.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ObjectScaler.cs",
@@ -46,12 +63,11 @@
               "RelativeToolTip": "Assets\\Scripts\\ObjectScaler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T06:37:07.204Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-28T06:37:07.204Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Dropdown.cs",
               "DocumentMoniker": "M:\\Project\\NTU-WP3\\Assets\\Scripts\\Dropdown.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dropdown.cs",
@@ -63,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CameraSwitcher.cs",
               "DocumentMoniker": "M:\\Project\\NTU-WP3\\Assets\\Scripts\\CameraSwitcher.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraSwitcher.cs",
@@ -74,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CameraController.cs",
               "DocumentMoniker": "M:\\Project\\NTU-WP3\\Assets\\Scripts\\CameraController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraController.cs",
@@ -86,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CameraFocus.cs",
               "DocumentMoniker": "M:\\Project\\NTU-WP3\\Assets\\Scripts\\CameraFocus.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraFocus.cs",
@@ -98,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ClickButton.cs",
               "DocumentMoniker": "M:\\Project\\NTU-WP3\\Assets\\Scripts\\ClickButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ClickButton.cs",

@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
-using UnityEngine.UI;
 using System;
 
 public class APIWaterQuality : MonoBehaviour
 {
     public Material waterShader;
-    public string backendUrl = "http://localhost:3000"; // URL backend Anda
+    public string baseUrl = "https://waterwise-server.urbansolv.co.id";
 
     private void Start()
     {
@@ -20,14 +19,13 @@ public class APIWaterQuality : MonoBehaviour
         while (true)
         {
             yield return StartCoroutine(FetchWaterQualityData());
-            // Tunggu 10 detik sebelum permintaan berikutnya
             yield return new WaitForSeconds(10f);
         }
     }
 
     private System.Collections.IEnumerator FetchWaterQualityData()
     {
-        // Daftar titik monitoring
+        // Daftar titik monitoring - pastikan nama persis sesuai dengan backend
         string[] monitoringPoints = {
             "point-situ",
             "point-wtp",
@@ -38,54 +36,95 @@ public class APIWaterQuality : MonoBehaviour
 
         foreach (string pointName in monitoringPoints)
         {
-            // Buat URL untuk mengambil parameter terbaru
-            string url = $"{backendUrl}/parameters/{pointName}";
+            // Konstruksi URL dengan lebih detail
+            string fullUrl = $"{baseUrl}/parameters/{pointName}";
 
-            using (UnityWebRequest www = UnityWebRequest.Get(url))
+            Debug.Log($"Mencoba mengakses URL: {fullUrl}");
+
+            using (UnityWebRequest www = UnityWebRequest.Get(fullUrl))
             {
+                // Tambahkan header untuk memastikan request valid
+                www.SetRequestHeader("Accept", "application/json");
+
                 yield return www.SendWebRequest();
 
-                if (www.result != UnityWebRequest.Result.Success)
-                {
-                    Debug.LogError($"Gagal mengambil data untuk {pointName}: " + www.error);
-                    continue;
-                }
+                // Cetak informasi detail respons
+                Debug.Log($"Respons untuk {pointName}:");
+                Debug.Log($"Kode Respons: {www.responseCode}");
+                Debug.Log($"Error: {www.error}");
+                Debug.Log($"Respon Text: {www.downloadHandler.text}");
 
-                try
+                // Penanganan berbagai skenario respons
+                switch (www.responseCode)
                 {
-                    // Parse JSON response
-                    string jsonResponse = www.downloadHandler.text;
-                    WaterQualityData waterQualityData = JsonUtility.FromJson<WaterQualityData>(jsonResponse);
+                    case 200: // Sukses
+                        try
+                        {
+                            // Parse JSON dengan metode yang lebih robust
+                            string jsonResponse = www.downloadHandler.text;
+                            ProcessWaterQualityData(pointName, jsonResponse);
+                        }
+                        catch (Exception e)
+                        {
+                            Debug.LogError($"Kesalahan parsing data untuk {pointName}: {e.Message}");
+                        }
+                        break;
 
-                    // Ubah warna air berdasarkan parameter
-                    UpdateWaterColor(waterQualityData.ph, waterQualityData.turbidity, waterQualityData.tds);
+                    case 404: // Not Found
+                        Debug.LogWarning($"Endpoint tidak ditemukan untuk {pointName}. Periksa URL atau konfigurasi backend.");
+                        break;
 
-                    // Log data yang diterima
-                    Debug.Log($"Data untuk {pointName}: " +
-                              $"pH={waterQualityData.ph}, " +
-                              $"Turbidity={waterQualityData.turbidity}, " +
-                              $"TDS={waterQualityData.tds}");
-                }
-                catch (Exception e)
-                {
-                    Debug.LogError($"Kesalahan parsing data untuk {pointName}: " + e.Message);
+                    case 500: // Server Error
+                        Debug.LogError($"Kesalahan server untuk {pointName}. Hubungi administrator.");
+                        break;
+
+                    default:
+                        Debug.LogWarning($"Respons tidak terduga: {www.responseCode}");
+                        break;
                 }
             }
         }
     }
 
+    private void ProcessWaterQualityData(string pointName, string jsonResponse)
+    {
+        // Debugging struktur JSON
+        Debug.Log($"JSON untuk {pointName}: {jsonResponse}");
+
+        // Coba parsing JSON dengan metode yang lebih fleksibel
+        try
+        {
+            // Jika struktur JSON berbeda, gunakan JsonUtility.FromJsonOverwrite atau manual
+            WaterQualityData waterQualityData = JsonUtility.FromJson<WaterQualityData>(jsonResponse);
+
+            if (waterQualityData != null)
+            {
+                UpdateWaterColor(waterQualityData.ph, waterQualityData.turbidity, waterQualityData.tds);
+
+                Debug.Log($"Data berhasil diproses untuk {pointName}: " +
+                          $"pH={waterQualityData.ph}, " +
+                          $"Turbidity={waterQualityData.turbidity}, " +
+                          $"TDS={waterQualityData.tds}");
+            }
+            else
+            {
+                Debug.LogError($"Gagal mem-parsing data untuk {pointName}");
+            }
+        }
+        catch (Exception e)
+        {
+            Debug.LogError($"Kesalahan parsing JSON untuk {pointName}: {e.Message}");
+        }
+    }
+
     private void UpdateWaterColor(float ph, float turbidity, float tds)
     {
-        // Logic untuk menentukan warna air berdasarkan parameter
         Color waterColor = DetermineWaterColor(ph, turbidity, tds);
-
-        // Terapkan warna ke shader air
         waterShader.SetColor("_Color", waterColor);
     }
 
     private Color DetermineWaterColor(float ph, float turbidity, float tds)
     {
-        // Kondisi warna air menggunakan operator OR
         if (ph < 6.5f || ph > 8.5f)
         {
             return new Color32(139, 69, 19, 255); // Cokelat (air tidak sehat)
@@ -99,7 +138,6 @@ public class APIWaterQuality : MonoBehaviour
         return new Color32(0, 191, 255, 255); // Biru (kondisi normal)
     }
 
-    // Class untuk memetakan struktur data JSON dari backend
     [Serializable]
     private class WaterQualityData
     {
