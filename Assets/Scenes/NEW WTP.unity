@@ -5119,26 +5119,26 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '0.072 mg/L
+  m_text: '0.091 mg/L
 
-    0.339 mg/L
+    0.902 mg/L
 
-    0.022 mg/L
+    0.005 mg/L
 
-    8.2
+    7.95
 
     <0.001 mg/L
 
     0.182
     mg/L
 
-    <0.1 mg/L
+    <0.17 mg/L
 
-    >23 MPN/100 mL
+    <0.1 MPN/100 mL
 
-    3.6 MPN/100 mL
+    <1.1 MPN/100 mL
 
-    72.9 mg/L
+    75 mg/L
 
     -'
   m_isRightToLeft: 0
@@ -17217,26 +17217,26 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '0.072 mg/L
+  m_text: '0.077 mg/L
 
-    0.339 mg/L
+    0.485 mg/L
 
-    0.022 mg/L
+    0.002 mg/L
 
-    8.2
+    7.73
 
     <0.001 mg/L
 
-    0.182
+    0.147
     mg/L
 
     <0.1 mg/L
 
-    >23 MPN/100 mL
+    <1.1 MPN/100 mL
 
-    3.6 MPN/100 mL
+    <1.1 MPN/100 mL
 
-    72.9 mg/L
+    75 mg/L
 
     -'
   m_isRightToLeft: 0
@@ -24161,8 +24161,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "24.3 \xB0C\nTidak Berbau\n126 mg/L\n31 NTU\n22 Pt.Co\n191 \xB5S/cm\r\n0.0014
-    mg/L\n0.201 mg/L\n<0.100 mg/L\n<0.0005 mg/L\n0.046 mg/L"
+  m_text: "24.4 \xB0C\nTidak Berbau\n156 mg/L\n3.88 NTU\n10 Pt.Co\n237 \xB5S/cm\r\n0.0012
+    mg/L\n0.038 mg/L\n0.154 mg/L\n<0.0005 mg/L\n0.017 mg/L"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -32673,8 +32673,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "24.3 \xB0C\nTidak Berbau\n126 mg/L\n31 NTU\n22 Pt.Co\n191 \xB5S/cm\r\n0.0014
-    mg/L\n0.201 mg/L\n<0.100 mg/L\n<0.0005 mg/L\n0.046 mg/L"
+  m_text: "24.3 \xB0C\nTidak Berbau\n156 mg/L\n4.23 NTU\n15 Pt.Co\n230 \xB5S/cm\r\n0.0011
+    mg/L\n0.103 mg/L\n0.142 mg/L\n<0.0005 mg/L\n0.055 mg/L"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -37306,8 +37306,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "24.3 \xB0C\nTidak Berbau\n126 mg/L\n31 NTU\n22 Pt.Co\n191 \xB5S/cm\r\n0.0014
-    mg/L\n0.201 mg/L\n<0.100 mg/L\n<0.0005 mg/L\n0.046 mg/L"
+  m_text: "24.3 \xB0C\nTidak Berbau\n127 mg/L\n42.3 NTU\n22 Pt.Co\n191 \xB5S/cm\r\n0.0012
+    mg/L\n0.27 mg/L\n<0.100 mg/L\n<0.0005 mg/L\n0.066 mg/L"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -39144,26 +39144,26 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '0.072 mg/L
+  m_text: '0.079 mg/L
 
-    0.339 mg/L
+    1.24 mg/L
 
-    0.022 mg/L
+    0.018 mg/L
 
-    8.2
+    8.06
 
     <0.001 mg/L
 
-    0.182
+    0.194
     mg/L
 
     <0.1 mg/L
 
     >23 MPN/100 mL
 
-    3.6 MPN/100 mL
+    1.1 MPN/100 mL
 
-    72.9 mg/L
+    75 mg/L
 
     -'
   m_isRightToLeft: 0
