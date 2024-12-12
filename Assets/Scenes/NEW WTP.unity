@@ -296,7 +296,6 @@ GameObject:
   - component: {fileID: 11209690}
   - component: {fileID: 11209689}
   - component: {fileID: 11209688}
-  - component: {fileID: 11209687}
   m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Untagged
@@ -319,22 +318,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1640707996}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &11209687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 11209685}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41a348dad657a114ab7b1f9f19026ccf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxStraightLength: 4.84
-  bendRadius: 3.05
-  bendAngle: 94.4
-  bendAxis: {x: 0, y: 0, z: 90}
 --- !u!136 &11209688
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9478,6 +9461,7 @@ GameObject:
   - component: {fileID: 330968680}
   - component: {fileID: 330968679}
   - component: {fileID: 330968683}
+  - component: {fileID: 330968684}
   m_Layer: 0
   m_Name: AIR TABUNG MAIN TANK
   m_TagString: Untagged
@@ -9608,6 +9592,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waterShader: {fileID: 2100000, guid: 5d655f1752f8211479b1e97cc86a963d, type: 2}
   backendUrl: http://localhost:3000
+--- !u!114 &330968684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330968677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a00d12ec6661e542a241195c0fed928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterRenderer: {fileID: 330968681}
+  initialColor: {r: 0, g: 0.5, b: 1, a: 1}
+  changedColor: {r: 1, g: 0.5, b: 0, a: 1}
+  transitionTime: 10
 --- !u!1 &349367101
 GameObject:
   m_ObjectHideFlags: 0
@@ -29450,7 +29450,6 @@ GameObject:
   - component: {fileID: 961089096}
   - component: {fileID: 961089095}
   - component: {fileID: 961089094}
-  - component: {fileID: 961089093}
   m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Untagged
@@ -29473,22 +29472,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 363676520}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &961089093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 961089091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41a348dad657a114ab7b1f9f19026ccf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxStraightLength: 4.84
-  bendRadius: 3.05
-  bendAngle: 94.4
-  bendAxis: {x: 0, y: 0, z: 90}
 --- !u!136 &961089094
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -45551,7 +45534,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b6391af640ac6a24eb689e04dc43f5d0,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2735037956258244453, guid: b6391af640ac6a24eb689e04dc43f5d0,
         type: 3}
@@ -55787,7 +55770,6 @@ GameObject:
   - component: {fileID: 2094868963}
   - component: {fileID: 2094868962}
   - component: {fileID: 2094868961}
-  - component: {fileID: 2094868960}
   m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Untagged
@@ -55810,22 +55792,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 904568183}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &2094868960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2094868958}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41a348dad657a114ab7b1f9f19026ccf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxStraightLength: 4.84
-  bendRadius: 3.05
-  bendAngle: 94.4
-  bendAxis: {x: 0, y: 0, z: 90}
 --- !u!136 &2094868961
 CapsuleCollider:
   m_ObjectHideFlags: 0
