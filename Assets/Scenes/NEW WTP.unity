@@ -361,7 +361,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 5d655f1752f8211479b1e97cc86a963d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4546,6 +4546,7 @@ GameObject:
   - component: {fileID: 185156369}
   - component: {fileID: 185156368}
   - component: {fileID: 185156367}
+  - component: {fileID: 185156372}
   m_Layer: 0
   m_Name: AIR TABUNG MAIN TANK KANAN
   m_TagString: Untagged
@@ -4676,6 +4677,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 185156365}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &185156372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185156365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a00d12ec6661e542a241195c0fed928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterRenderer: {fileID: 185156370}
+  initialColor: {r: 0.8117647, g: 0.5803922, b: 0.34901962, a: 1}
+  changedColor: {r: 0, g: 0.75686276, b: 1, a: 1}
+  transitionTime: 100
 --- !u!1 &187659121
 GameObject:
   m_ObjectHideFlags: 0
@@ -7246,6 +7263,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 257127136}
+  - component: {fileID: 257127137}
   m_Layer: 0
   m_Name: tank to filterasi (6)
   m_TagString: Untagged
@@ -7263,12 +7281,33 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.3330042, y: 0.28499985, z: 24.471008}
-  m_LocalScale: {x: 0.19000001, y: 0.33, z: 0.19000001}
+  m_LocalScale: {x: 0.19000001, y: 0.001, z: 0.19000001}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2026064940}
   m_Father: {fileID: 268502776}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &257127137
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257127135}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fac3ce53eb429ab4d98404153a76545c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &258760249
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7916,6 +7955,7 @@ GameObject:
   - component: {fileID: 284967393}
   - component: {fileID: 284967392}
   - component: {fileID: 284967391}
+  - component: {fileID: 284967396}
   m_Layer: 0
   m_Name: AIR TABUNG MAIN TANK KANAN (1)
   m_TagString: Untagged
@@ -8046,6 +8086,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 284967389}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &284967396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284967389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a00d12ec6661e542a241195c0fed928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterRenderer: {fileID: 284967394}
+  initialColor: {r: 0.8117647, g: 0.5803922, b: 0.34901962, a: 1}
+  changedColor: {r: 0, g: 0.75686276, b: 1, a: 1}
+  transitionTime: 100
 --- !u!1 &288052947
 GameObject:
   m_ObjectHideFlags: 0
@@ -8695,6 +8751,7 @@ GameObject:
   - component: {fileID: 308323156}
   - component: {fileID: 308323155}
   - component: {fileID: 308323154}
+  - component: {fileID: 308323159}
   m_Layer: 0
   m_Name: AIR TABUNG MAIN TANK
   m_TagString: Untagged
@@ -8825,6 +8882,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 308323152}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &308323159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308323152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a00d12ec6661e542a241195c0fed928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterRenderer: {fileID: 308323157}
+  initialColor: {r: 0.8117647, g: 0.5803922, b: 0.34901962, a: 1}
+  changedColor: {r: 0, g: 0.75686276, b: 1, a: 1}
+  transitionTime: 100
 --- !u!1 &311221806
 GameObject:
   m_ObjectHideFlags: 0
@@ -9605,9 +9678,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waterRenderer: {fileID: 330968681}
-  initialColor: {r: 0, g: 0.5, b: 1, a: 1}
-  changedColor: {r: 1, g: 0.5, b: 0, a: 1}
-  transitionTime: 10
+  initialColor: {r: 0.8117647, g: 0.5803922, b: 0.34901962, a: 1}
+  changedColor: {r: 0, g: 0.75693464, b: 1, a: 1}
+  transitionTime: 100
 --- !u!1 &349367101
 GameObject:
   m_ObjectHideFlags: 0
@@ -9751,6 +9824,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 363167390}
+  - component: {fileID: 363167391}
   m_Layer: 0
   m_Name: tank to filterasi (9)
   m_TagString: Untagged
@@ -9767,13 +9841,34 @@ Transform:
   m_GameObject: {fileID: 363167389}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 1.5200007, y: 1.651, z: 24.471008}
-  m_LocalScale: {x: 0.19, y: 0.10000001, z: 0.19}
+  m_LocalPosition: {x: 1.74, y: 1.651, z: 24.471}
+  m_LocalScale: {x: 0.19, y: -0.001, z: 0.19}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1027619806}
   m_Father: {fileID: 268502776}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!95 &363167391
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363167389}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 40d94789512c636429985a312111c3ca, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &363676519
 GameObject:
   m_ObjectHideFlags: 0
@@ -9783,6 +9878,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 363676520}
+  - component: {fileID: 363676521}
   m_Layer: 0
   m_Name: tank to filterasi (1)
   m_TagString: Untagged
@@ -9800,12 +9896,33 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 21.646, y: 1.848, z: 20.881002}
-  m_LocalScale: {x: 0.19000001, y: 0.63, z: 0.19000001}
+  m_LocalScale: {x: 0.19000001, y: 0.001, z: 0.19000001}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 961089092}
   m_Father: {fileID: 268502776}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &363676521
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363676519}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 67213e5ff72d1ef46a32b7e9c79bf468, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &365796178
 GameObject:
   m_ObjectHideFlags: 0
@@ -20731,7 +20848,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 5d655f1752f8211479b1e97cc86a963d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22054,6 +22171,7 @@ GameObject:
   - component: {fileID: 750815893}
   - component: {fileID: 750815892}
   - component: {fileID: 750815896}
+  - component: {fileID: 750815897}
   m_Layer: 0
   m_Name: AIR TABUNG MAIN TANK KANAN (1)
   m_TagString: Untagged
@@ -22184,6 +22302,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waterShader: {fileID: 2100000, guid: 5d655f1752f8211479b1e97cc86a963d, type: 2}
   backendUrl: http://localhost:3000
+--- !u!114 &750815897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750815890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a00d12ec6661e542a241195c0fed928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterRenderer: {fileID: 750815894}
+  initialColor: {r: 0.8117647, g: 0.5803922, b: 0.34901962, a: 1}
+  changedColor: {r: 0, g: 0.75686276, b: 1, a: 1}
+  transitionTime: 100
 --- !u!1001 &751413570
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22894,7 +23028,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 5d655f1752f8211479b1e97cc86a963d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -27520,6 +27654,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 904568183}
+  - component: {fileID: 904568184}
   m_Layer: 0
   m_Name: tank to filterasi (2)
   m_TagString: Untagged
@@ -27537,12 +27672,33 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.63372433, y: 0.31367737, z: -0.31367737, w: 0.63372433}
   m_LocalPosition: {x: 21.958805, y: 1.9420004, z: 21.108805}
-  m_LocalScale: {x: 0.18999997, y: 0.13999997, z: 0.18999998}
+  m_LocalScale: {x: 0.18999997, y: 0.001, z: 0.18999998}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2094868959}
   m_Father: {fileID: 268502776}
   m_LocalEulerAnglesHint: {x: 89.966, y: 0, z: -52.668}
+--- !u!95 &904568184
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904568182}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2a5838cdd34247c479688e510a28656e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &909868475
 GameObject:
   m_ObjectHideFlags: 0
@@ -29515,7 +29671,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 5d655f1752f8211479b1e97cc86a963d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29554,6 +29710,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 965374175}
+  - component: {fileID: 965374176}
   m_Layer: 0
   m_Name: tank to filterasi (4)
   m_TagString: Untagged
@@ -29570,13 +29727,34 @@ Transform:
   m_GameObject: {fileID: 965374174}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2.3050044, y: 0.16900015, z: 28.046007}
-  m_LocalScale: {x: 0.19, y: -6.120001, z: 0.19}
+  m_LocalPosition: {x: 2.335, y: 0.16900015, z: 28.046}
+  m_LocalScale: {x: 0.19, y: 0.001, z: 0.19}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 760953377}
   m_Father: {fileID: 268502776}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!95 &965374176
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965374174}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f1cb8d5e9f3e9e47be65d496e09ca86, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &966128134
 GameObject:
   m_ObjectHideFlags: 0
@@ -30450,6 +30628,7 @@ GameObject:
   - component: {fileID: 985825563}
   - component: {fileID: 985825562}
   - component: {fileID: 985825566}
+  - component: {fileID: 985825567}
   m_Layer: 0
   m_Name: AIR TABUNG MAIN TANK KANAN
   m_TagString: Untagged
@@ -30580,6 +30759,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waterShader: {fileID: 2100000, guid: 5d655f1752f8211479b1e97cc86a963d, type: 2}
   backendUrl: http://localhost:3000
+--- !u!114 &985825567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985825560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a00d12ec6661e542a241195c0fed928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterRenderer: {fileID: 985825564}
+  initialColor: {r: 0.8117647, g: 0.5803922, b: 0.34901962, a: 1}
+  changedColor: {r: 0, g: 0.75686276, b: 1, a: 1}
+  transitionTime: 100
 --- !u!1001 &989137836
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31240,7 +31435,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 5d655f1752f8211479b1e97cc86a963d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -31844,7 +32039,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 5d655f1752f8211479b1e97cc86a963d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -33578,6 +33773,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1121023479}
+  - component: {fileID: 1121023480}
   m_Layer: 0
   m_Name: tank to filterasi
   m_TagString: Untagged
@@ -33595,12 +33791,33 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 18.19101, y: 0.14400005, z: 20.563005}
-  m_LocalScale: {x: 0.19, y: 3.7100005, z: 0.19}
+  m_LocalScale: {x: 0.19, y: 0.001, z: 0.19}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 683142335}
   m_Father: {fileID: 268502776}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1121023480
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121023478}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 23f2bd94efe348941b86c5c0403921f5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1121532635
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37191,6 +37408,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1335592429}
+  - component: {fileID: 1335592430}
   m_Layer: 0
   m_Name: tank to filterasi (5)
   m_TagString: Untagged
@@ -37207,13 +37425,34 @@ Transform:
   m_GameObject: {fileID: 1335592428}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2.3050044, y: 0.16900015, z: 28.052008}
-  m_LocalScale: {x: 0.19, y: 2.07, z: 0.19}
+  m_LocalPosition: {x: 2.3350031, y: 0.16900015, z: 28.052}
+  m_LocalScale: {x: 0.19, y: 0.001, z: 0.19}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1447303901}
   m_Father: {fileID: 268502776}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!95 &1335592430
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335592428}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 562e93b26dfd45e469a13eb8d19ce9b2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1340748805
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39988,7 +40227,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 5d655f1752f8211479b1e97cc86a963d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -42322,6 +42561,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1556698942}
+  - component: {fileID: 1556698943}
   m_Layer: 0
   m_Name: tank to filterasi (3)
   m_TagString: Untagged
@@ -42339,12 +42579,33 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: 18.131002, y: 0.13999987, z: 28.04531}
-  m_LocalScale: {x: 0.19, y: 7.86, z: 0.19}
+  m_LocalScale: {x: 0.19, y: 0.001, z: 0.19}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1341005770}
   m_Father: {fileID: 268502776}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
+--- !u!95 &1556698943
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556698941}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a34953393077ba54687e35a384fdeac0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1558210105
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43384,7 +43645,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 5d655f1752f8211479b1e97cc86a963d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -45100,6 +45361,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1640707996}
+  - component: {fileID: 1640707997}
   m_Layer: 0
   m_Name: tank to filterasi
   m_TagString: Untagged
@@ -45117,12 +45379,33 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 21.652306, y: 0.48589993, z: 20.774107}
-  m_LocalScale: {x: 0.19, y: 0.13, z: 0.19}
+  m_LocalScale: {x: 0.19, y: 0.001, z: 0.19}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 11209686}
   m_Father: {fileID: 268502776}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1640707997
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640707995}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4e4116a7cdb7e9f49852b5f4c9ca1bbc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1654095110 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f16970da17b84c74fbdd60bb9e5e2f16,
@@ -45201,6 +45484,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1666352827}
+  - component: {fileID: 1666352828}
   m_Layer: 0
   m_Name: tank to filterasi (8)
   m_TagString: Untagged
@@ -45217,13 +45501,34 @@ Transform:
   m_GameObject: {fileID: 1666352826}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 1.9430048, y: 1.0620003, z: 24.471008}
-  m_LocalScale: {x: 0.19, y: 0.13, z: 0.19}
+  m_LocalPosition: {x: 2.213, y: 1.0606, z: 24.471}
+  m_LocalScale: {x: 0.19, y: -0.001, z: 0.19}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1056241214}
   m_Father: {fileID: 268502776}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!95 &1666352828
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666352826}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d63b6fa0dd060a34cb830386beeb211a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1669062907
 GameObject:
   m_ObjectHideFlags: 0
@@ -48677,6 +48982,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1796794912}
+  - component: {fileID: 1796794913}
   m_Layer: 0
   m_Name: tank to filterasi
   m_TagString: Untagged
@@ -48694,12 +49000,33 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: 21.552505, y: 0.47910023, z: 20.46541}
-  m_LocalScale: {x: 0.19, y: 1.6600001, z: 0.19}
+  m_LocalScale: {x: 0.19, y: 0.001, z: 0.19}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2105420339}
   m_Father: {fileID: 268502776}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1796794913
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796794911}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 800d85a093de0524f89077b2a849b7b1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1799848100
 GameObject:
   m_ObjectHideFlags: 0
@@ -54372,7 +54699,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 5d655f1752f8211479b1e97cc86a963d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -55835,7 +56162,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 5d655f1752f8211479b1e97cc86a963d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -56224,7 +56551,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 5d655f1752f8211479b1e97cc86a963d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
