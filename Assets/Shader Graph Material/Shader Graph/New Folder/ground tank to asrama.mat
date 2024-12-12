@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: New Material
-  m_Shader: {fileID: -6465566751694194690, guid: e0ac0698882c86946aa1bff4e7226c3c,
+  m_Name: ground tank to asrama
+  m_Shader: {fileID: -6465566751694194690, guid: fe8d6a1bfdf2d274ea45e92930f7c966,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -126,10 +126,9 @@ Material:
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
-    - _alfa: 0
-    - _clip: 1
-    - _grow: 0
-    - _metalic: 6.63
+    - _clip: 0.01
+    - _grow: 1
+    - _metalic: 0
     - _scale: 0
     - _smoot: 0
     m_Colors:
