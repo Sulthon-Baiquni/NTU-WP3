@@ -10194,6 +10194,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: acd9d3166506eeb4a84d4365a7e681c6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d9b5d16aab5993418556427f91f856a, type: 2}
     - target: {fileID: 919132149155446097, guid: acd9d3166506eeb4a84d4365a7e681c6,
         type: 3}
       propertyPath: m_Name
@@ -10954,6 +10959,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GEDUNG P ASRAMA REV V1  (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6745302439343835087, guid: 2013ffd285a33bc429b9961a5c10624a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d9b5d16aab5993418556427f91f856a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16960,6 +16970,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: acd9d3166506eeb4a84d4365a7e681c6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d9b5d16aab5993418556427f91f856a, type: 2}
     - target: {fileID: 919132149155446097, guid: acd9d3166506eeb4a84d4365a7e681c6,
         type: 3}
       propertyPath: m_Name
@@ -33572,74 +33587,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1001 &1064696680
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 99366fa5cb5f60747bf9923af4806e5c,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -101.38218
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 99366fa5cb5f60747bf9923af4806e5c,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.5894324
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 99366fa5cb5f60747bf9923af4806e5c,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -26.098085
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 99366fa5cb5f60747bf9923af4806e5c,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.6073307
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 99366fa5cb5f60747bf9923af4806e5c,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.6073307
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 99366fa5cb5f60747bf9923af4806e5c,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.3621457
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 99366fa5cb5f60747bf9923af4806e5c,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.36214554
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 99366fa5cb5f60747bf9923af4806e5c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 99366fa5cb5f60747bf9923af4806e5c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 99366fa5cb5f60747bf9923af4806e5c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 99366fa5cb5f60747bf9923af4806e5c,
-        type: 3}
-      propertyPath: m_Name
-      value: asrama rev V3
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 99366fa5cb5f60747bf9923af4806e5c, type: 3}
 --- !u!1 &1064840585 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 002c460ec810cae4cb79ff243193a865,
@@ -39277,6 +39224,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: acd9d3166506eeb4a84d4365a7e681c6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d9b5d16aab5993418556427f91f856a, type: 2}
     - target: {fileID: 919132149155446097, guid: acd9d3166506eeb4a84d4365a7e681c6,
         type: 3}
       propertyPath: m_Name
@@ -39766,6 +39718,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GEDUNG P ASRAMA REV V1  (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6745302439343835087, guid: 2013ffd285a33bc429b9961a5c10624a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d9b5d16aab5993418556427f91f856a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40947,6 +40904,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -11.352
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 99366fa5cb5f60747bf9923af4806e5c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d9b5d16aab5993418556427f91f856a, type: 2}
     - target: {fileID: 919132149155446097, guid: 99366fa5cb5f60747bf9923af4806e5c,
         type: 3}
       propertyPath: m_Name
@@ -51318,6 +51280,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GEDUNG P ASRAMA REV V1  (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6745302439343835087, guid: 2013ffd285a33bc429b9961a5c10624a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d9b5d16aab5993418556427f91f856a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -52287,6 +52254,79 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1875574505}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1876598686
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: be2142a609cf74449854050691732b0a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.17
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: be2142a609cf74449854050691732b0a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.54
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: be2142a609cf74449854050691732b0a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.55
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: be2142a609cf74449854050691732b0a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: be2142a609cf74449854050691732b0a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: be2142a609cf74449854050691732b0a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: be2142a609cf74449854050691732b0a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: be2142a609cf74449854050691732b0a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: be2142a609cf74449854050691732b0a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: be2142a609cf74449854050691732b0a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: be2142a609cf74449854050691732b0a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 11f6cadb498780c4a9fc7ac433036da6, type: 2}
+    - target: {fileID: 919132149155446097, guid: be2142a609cf74449854050691732b0a,
+        type: 3}
+      propertyPath: m_Name
+      value: DOSIS TENK LUAR2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: be2142a609cf74449854050691732b0a, type: 3}
 --- !u!1 &1879579608
 GameObject:
   m_ObjectHideFlags: 0
@@ -52545,6 +52585,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GEDUNG P ASRAMA REV V1  (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6745302439343835087, guid: 2013ffd285a33bc429b9961a5c10624a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d9b5d16aab5993418556427f91f856a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -59354,7 +59399,6 @@ SceneRoots:
   - {fileID: 41474400}
   - {fileID: 1850120837}
   - {fileID: 58246868}
-  - {fileID: 1064696680}
   - {fileID: 1423907223}
   - {fileID: 350221815}
   - {fileID: 430985268}
@@ -59372,3 +59416,4 @@ SceneRoots:
   - {fileID: 469896499}
   - {fileID: 1948512629}
   - {fileID: 1000965048}
+  - {fileID: 1876598686}
