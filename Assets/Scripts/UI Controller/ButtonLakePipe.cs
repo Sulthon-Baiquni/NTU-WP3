@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class RandomLake : MonoBehaviour
+public class NewBehaviourScript : MonoBehaviour
 {
     [System.Serializable]
     public class PipeInfo
